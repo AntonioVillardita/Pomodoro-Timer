@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>🍅 Pomodoro Timer</h1>
+
+    <div class="inputs">
+        <div>
+            <label>
+                Focus (ore): <input type="number" id="focusHours" value="0" min="0" />
+            </label>
+            <label>
+                Focus (min): <input type="number" id="focusMinutes" value="0" min="0" />
+            </label>
+        </div>
+        <div>
+            <label>
+                Break (ore): <input type="number" id="breakHours" value="0" min="0" />
+            </label>
+            <label>
+                Break (min): <input type="number" id="breakMinutes" value="0" min="0" />
+            </label>
+        </div>
+    </div>
+
+    <div id="status">Focus Time</div>
+    <div id="timer">00:00:00</div>
+
+    <div>
+        <button id="startBtn">Play</button>
+        <button id="pauseBtn">Pausa</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
